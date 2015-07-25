@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bg1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp">
+            <ImageButton
+                android:id="@+id/plan_returnbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="0dp"
+                android:src="@drawable/returnbtn" 
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/btn_bg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的参与"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView
+            android:id="@+id/my_appointlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="48dp" 
+            android:background="@drawable/bar_bg"/>
+</RelativeLayout>

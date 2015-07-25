@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+        android:id="@+id/game_page"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bg1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的游戏"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </LinearLayout>	
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <Button
+            android:id="@+id/left_btn"
+            android:layout_width="128dp"
+            android:layout_height="96dp"
+            android:layout_alignBaseline="@+id/right_btn"
+            android:layout_alignBottom="@+id/right_btn"
+            android:layout_marginBottom="110dp"
+            android:layout_marginLeft="20dp"
+            android:text="left" />
+
+        <Button
+            android:id="@+id/right_btn"
+            android:layout_width="128dp"
+            android:layout_height="96dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="110dp"
+            android:layout_marginRight="20dp"
+            android:text="right" />
+
+        <TextView
+            android:id="@+id/stepnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/left_btn"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="78dp"
+            android:text="Step: 0"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/runner_blue"
+            android:layout_width="196dp"
+            android:layout_height="196dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/blue_front1" />
+
+        <TextView
+            android:id="@+id/time_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/right_btn"
+            android:layout_alignTop="@+id/stepnum"
+            android:text="00:00:10"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

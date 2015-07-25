@@ -1,0 +1,326 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bg1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp">
+            <ImageButton
+                android:id="@+id/edit_returnbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="0dp"
+                android:src="@drawable/returnbtn" 
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/btn_bg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="个人信息"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+            
+             <ImageButton
+                android:id="@+id/editbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_bg"
+                android:src="@drawable/edit" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+        
+     
+        <RelativeLayout
+        android:id="@+id/userbtn"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bar_bg">
+  
+                <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:paddingTop="10dp"
+            android:text="头像"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/myicon" 
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/planbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bar_bg">
+
+        
+                <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:paddingTop="10dp"
+            android:text="用户名"
+            android:textSize="18dp" />
+                
+                <TextView
+            android:id="@+id/display_username"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+ 			android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:text="HelloKitty"
+            android:textSize="18dp" 
+            android:textColor="#CCCCCC"/>
+                
+           
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/planbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bar_bg">
+
+        
+                <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:paddingTop="10dp"
+            android:text="电话"
+            android:textSize="18dp" />
+                
+                <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+ 			android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:text="139xxxx2222"
+            android:textSize="18dp" 
+            android:enabled="false"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/planbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bar_bg">
+
+        
+                <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:paddingTop="10dp"
+            android:text="邮箱"
+            android:textSize="18dp" />
+                
+                <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+ 			android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:text="user@111.com"
+            android:textSize="18dp"
+            android:enabled="false" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/planbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bar_bg">
+
+        
+                <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:paddingTop="10dp"
+            android:text="性别"
+            android:textSize="18dp" />
+                
+                <EditText
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+ 			android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:text="女"
+            android:textSize="18dp" 
+            android:enabled="false"/>
+                
+                <Spinner
+            android:id="@+id/edit_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="190dp"
+            android:layout_toRightOf="@+id/textView3"
+            android:paddingTop="10dp"
+            android:textSize="18dp" 
+            android:visibility="gone"
+            android:entries="@array/ChooseSexSpinner" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/planbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bar_bg">
+
+        
+                <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:paddingTop="10dp"
+            android:text="年龄"
+            android:textSize="18dp" />
+                
+                <EditText
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+ 			android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:text="20"
+            android:textSize="18dp" 
+            android:enabled="false"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/planbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bar_bg">
+
+        
+                <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:paddingTop="10dp"
+            android:text="学校"
+            android:textSize="18dp" />
+                
+                <EditText
+            android:id="@+id/school"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+ 			android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:text="中山大学"
+            android:textSize="18dp" 
+            android:enabled="false"/>
+
+            <Spinner
+                android:id="@+id/edit_school"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="172dp"
+                android:layout_toRightOf="@+id/textView3"
+                android:paddingTop="10dp"
+                android:textSize="18dp" 
+                android:visibility="gone"
+                android:entries="@array/ChooseSchoolSpinner" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/edit_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认" 
+        android:background="@drawable/title_bg1"
+        android:layout_margin="10dp"
+        android:visibility="gone"/>
+   </LinearLayout>
+
+    
+
+</RelativeLayout>
